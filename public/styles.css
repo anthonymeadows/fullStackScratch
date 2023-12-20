@@ -1,0 +1,80 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #1a1a1a;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    height: 100vh;
+}
+
+.container {
+    max-width: 800px;
+    padding: 40px;
+    background-color: #333;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    height: 90vh;
+}
+
+h2 {
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+button {
+    background-color: #ff6347;
+    color: #fff;
+    padding: 15px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, color 0.3s ease-in-out;
+    margin-bottom: 10px;
+    width: 150px;
+    font-size: 18px;
+    border-radius: 25px;
+}
+
+button:hover {
+    background-color: #d9534f;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.menu-button.active {
+    background-color: #5bc0de;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    color: #000
+}
+
+.top-header {
+    position: absolute;
+    left: 60px;
+    top: 20px;
+    z-index: 1;
+}
+
+.dynamic-content-container {
+    background-color: #333;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+    border-radius: 15px;
+    padding: 20px;
+    position: absolute;
+    left:250px;
+    top:10px;
+}
+
+.dynamic-content {
+    margin-top: 20px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 5px;
+}
