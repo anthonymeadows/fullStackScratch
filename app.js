@@ -5,7 +5,7 @@ import fs from 'fs';
 const app = express();
 const expressPort = 8000
 
-app.use()
+// app.use()
 
 
 app.get('/', (req, res) => {
@@ -15,3 +15,9 @@ app.get('/', (req, res) => {
 app.listen(expressPort, () => {
     console.log(`Listening on port ${expressPort}`)
 })
+
+//add an items table to ERD
+     // joining table
+
+// add GET request to diagram
+    // 
