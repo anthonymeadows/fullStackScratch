@@ -2,7 +2,8 @@ $(document).ready(() => {
     $('button').on('click', function () {
         $('button').removeClass('active');
         $(this).addClass('active');
-        $('#dynamic-content-container').empty(); // Clear existing content
+        
+        $('#dynamic-content-container').empty();
 
         // Fetch data based on button click
         if (this.id === 'items') {

@@ -1,16 +1,15 @@
 import express from 'express';
 import pkg from 'pg';
 import path from 'path';
+import 'dotenv/config';
 
 const { Pool } = pkg;
 
 const psql = new Pool({
-    host: process.env.DB_HOST || 'localhost',
-    user: process.env.DB_USER || 'anthonylinux',
-    password: process.env.DB_PASSWORD || 'postgres',
-    database: process.env.DB_NAME || 'hurryup',
+    connectionString : process.env.PG_DATABASE_URL,
 });
 
+//?ssl=true at the end of your extrenal database URL from render
 
 const app = express();
 const expressPort = 8000;
